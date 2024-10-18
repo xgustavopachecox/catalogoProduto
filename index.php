@@ -1,5 +1,5 @@
 <?php
-require_once "conexao.php";
+require_once "./conexoes/conexao.php";
 ?>
 <!DOCTYPE html>
 <html lang="pt-BR">
@@ -24,9 +24,9 @@ require_once "conexao.php";
     <section id="dados">
         <h2>Dados de Vendas</h2>
         <div class="conjuntoBotao">
-            <button class="botao botaoinserir" id="botaoinserir">Adicionar</button>
-            <button class="botao botaoeditar" id="botaoeditar">Editar</button>
-            <button class="botao botaoexcluir" id="botaoexcluir">Excluir</button>
+            <a href="produtosInserir.php">Adicionar</a>
+            <a href="inserir.php">Editar</a>
+            <a href="inserir.php">Excluir</a>
         </div>
         <table>
             <thead>
@@ -58,19 +58,20 @@ require_once "conexao.php";
         <p>Temos um total de <span id="totalProdutos"></span>produtos</p>
     </section>
 
-
-    <script>
-        // retorno da data atual
-        const dataDeHoje = $('#dataDeHoje');
-        const data = new Date().toLocaleDateString();
-        
-        dataDeHoje.text(data);
-        //fim da função
-
-        //funcao para somar quantos produtos tem
-
-        
-
-    </script>
 </body>
 </html>
+<script src="./scripts/script.js"></script>
+
+<!-- <script>
+    // retorno da data atual
+    const dataDeHoje = $('#dataDeHoje');
+    const data = new Date().toLocaleDateString();
+    
+    dataDeHoje.text(data);
+    //fim da função
+
+    //funcao para somar quantos produtos tem
+
+    
+
+</script> -->
