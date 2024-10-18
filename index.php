@@ -25,8 +25,8 @@ require_once "./conexoes/conexao.php";
         <h2>Dados de Vendas</h2>
         <div class="conjuntoBotao">
             <a href="produtosInserir.php">Adicionar</a>
-            <a href="inserir.php">Editar</a>
-            <a href="inserir.php">Excluir</a>
+            <a href="#">Editar</a>
+            <a href="#">Excluir</a>
         </div>
         <table>
             <thead>
